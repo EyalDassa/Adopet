@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/user_LBL_personalDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/roboto_condensed"
+        android:text="Personal Details"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/user_LBL_personalDetails"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="3dp"
+        app:strokeWidth="0dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:layout_editor_absoluteX="-75dp"
+            tools:layout_editor_absoluteY="-25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/user_LAY_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/user_IMG_user"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorBackground"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_img"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/circleImageView" />
+
+                <Button
+                    android:id="@+id/user_BTN_editImage"
+                    style="@style/Widget.Material3.Button.Icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/user_IMG_user"
+                    android:layout_toEndOf="@id/user_IMG_user"
+                    android:backgroundTint="@color/colorBackground"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/edit"
+                    app:iconGravity="textEnd"
+                    app:iconSize="20dp"
+                    app:iconTint="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_IMG_user"
+                    app:layout_constraintEnd_toEndOf="@+id/user_IMG_user"
+                    app:layout_constraintStart_toEndOf="@+id/user_IMG_user"
+                    app:layout_constraintTop_toBottomOf="@+id/user_IMG_user" />
+
+                <Button
+                    android:id="@+id/user_BTN_removeImage"
+                    style="@style/Widget.Material3.Button.Icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/user_IMG_user"
+                    android:layout_toEndOf="@id/user_IMG_user"
+                    android:backgroundTint="@color/colorBackground"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/trash_xmark"
+                    app:iconGravity="textEnd"
+                    app:iconSize="20dp"
+                    app:iconTint="@color/colorPrimary"
+                    app:layout_constraintEnd_toStartOf="@+id/user_IMG_user"
+                    app:layout_constraintStart_toStartOf="@+id/user_IMG_user"
+                    app:layout_constraintTop_toBottomOf="@+id/user_IMG_user"
+                    app:layout_constraintTop_toTopOf="@+id/user_IMG_user" />
+
+                <Button
+                    android:id="@+id/user_BTN_dropdown"
+                    style="?attr/materialIconButtonStyle"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:iconGravity="textEnd"
+                    app:icon="@drawable/menu_dots_vertical"
+                    app:iconSize="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/user_LBL_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="Name"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/user_IMG_user"
+                    app:layout_constraintStart_toStartOf="@+id/user_IMG_user"
+                    app:layout_constraintTop_toBottomOf="@+id/user_BTN_editImage" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/user_TXT_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:enabled="false"
+                    android:hint="Email"
+                    app:layout_constraintTop_toBottomOf="@+id/user_LBL_name"
+                    app:placeholderText="name@example.com"
+                    app:startIconDrawable="@drawable/email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/user_LBL_yourFavorites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="Your Favorites"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/user_IMG_user"
+                    app:layout_constraintStart_toStartOf="@+id/user_IMG_user"
+                    app:layout_constraintTop_toBottomOf="@+id/user_TXT_email" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:id="@+id/user_LAY_pets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/user_LAY_top"
+                android:backgroundTint="@color/colorPrimary">
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/user_BORDER_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
