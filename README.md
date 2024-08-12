@@ -45,8 +45,6 @@ This project is part of an Android development course focused on building compre
 
 ## Screenshots
 
-Include some screenshots or GIFs to showcase your application. This helps potential users or contributors quickly understand the UI and main features.
-
 ### Sign In
 ![Sign In](screenshots/signin.jpg)
 
