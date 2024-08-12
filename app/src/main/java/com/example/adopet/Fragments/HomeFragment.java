@@ -51,13 +51,12 @@ public class HomeFragment extends Fragment {
         fragmentCategories = new CategoriesFragment();
         fragmentPets = new PetsFragment();
         fragmentCategories.setCategoryCallBack(showCategoryCallBack);
-        loadUserDetails(user -> {
-            getChildFragmentManager().beginTransaction()
-                    .add(R.id.home_LAY_categories, fragmentCategories)
-                    .add(R.id.home_LAY_pets, fragmentPets)
-                    .commit();
-            home_LBL_hello.setText("Hello, " + user.getName() + "!");
-        });
+
+        getChildFragmentManager().beginTransaction()
+                .add(R.id.home_LAY_categories, fragmentCategories)
+                .add(R.id.home_LAY_pets, fragmentPets)
+                .commit();
+        home_LBL_hello.setText("Hello, " + User.getInstance().getName() + "!");
 
         home_BTN_add.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), AddPetActivity.class);
@@ -73,10 +72,6 @@ public class HomeFragment extends Fragment {
         home_LBL_currCategory = view.findViewById(R.id.home_LBL_currCategory);
         home_BTN_add = view.findViewById(R.id.home_BTN_add);
 
-    }
-
-    private void loadUserDetails (UserDetailsCallBack callback){
-        DbManager.loadUserDetails(callback);
     }
 
     private CategoryCallBack showCategoryCallBack = new CategoryCallBack() {
