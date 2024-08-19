@@ -6,7 +6,7 @@
 
 This project is part of an Android development course focused on building comprehensive, real-world mobile applications.
 
-**Adopet** is designed to facilitate the process of pet adoption. Users can browse available pets, mark their favorites, and contact pet owners directly through the app. The app also allows users to manage their profiles and view and manage their favorite pets.
+**Adopet** is designed to facilitate the process of pet adoption. Users can browse available pets, mark their favorites, and contact pet owners directly through the app. The app also allows users to manage their profiles and to view and manage their favorite pets.
 
 ### Key Objectives of the Project:
 
@@ -93,4 +93,4 @@ This project is part of an Android development course focused on building compre
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/yourprojectname.git
+   git clone https://github.com/EyalDassa/Adopet.git
