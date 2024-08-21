@@ -47,39 +47,40 @@ This project is part of an Android development course focused on building compre
 
 ### Sign In
 ![Sign In](screenshots/signin.jpg)
+<img src="screenshots/signin.jpg" alt="Sign In" style="height:700px;"/>
 
 ### Firebase AuthUI
-![Firebase AuthUI](screenshots/firebaseUI.jpg)
+<img src="screenshots/firebaseUI.jpg" alt="Firebase AuthUI" style="height:700px;"/>
 
 ### User Details Input
-![User Details Input](screenshots/userdetails.jpg)
+<img src="screenshots/userdetails.jpg" alt="User Details Input" style="height:700px;"/>
 
 ### Home Screen
 <img src="screenshots/home.jpg" alt="Home Screen" style="height:700px;"/>
 
 ### Home Screen Filtered
-![Home Screen Filtered](screenshots/homefiltered.jpg)
+<img src="screenshots/homefiltered.jpg" alt="Home Screen Filtered" style="height:700px;"/>
 
 ### Pet Details
-![Pet Details](screenshots/petdetails.jpg)
+<img src="screenshots/petdetails.jpg" alt="Pet Details" style="height:700px;"/>
 
 ### Pet Image Expanded
-![Pet Image Expanded](screenshots/petimageexpanded.jpg)
+<img src="screenshots/petimageexpanded.jpg" alt="Pet Image Expanded" style="height:700px;"/>
 
 ### Add Pet
-![Add Pet1](screenshots/addpet1.jpg)
+<img src="screenshots/addpet1.jpg" alt="Add Pet" style="height:700px;"/>
 
 ### Add Pet
-![Add Pet2](screenshots/addpet2.jpg)
+<img src="screenshots/addpet2.jpg" alt="Add Pet" style="height:700px;"/>
 
 ### User
-![User](screenshots/user.jpg)
+<img src="screenshots/user.jpg" alt="User" style="height:700px;"/>
 
 ### Manage Pets
-![Manage Pets](screenshots/managepets.jpg)
+<img src="screenshots/managepets.jpg" alt="Manage Pets" style="height:700px;"/>
 
 ### Edit Pet
-![Edit Pet](screenshots/editpet.jpg)
+<img src="screenshots/editpet.jpg" alt="Edit Pet" style="height:700px;"/>
 
 ## Installation
 
