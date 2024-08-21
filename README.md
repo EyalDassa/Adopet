@@ -55,7 +55,7 @@ This project is part of an Android development course focused on building compre
 ![User Details Input](screenshots/userdetails.jpg)
 
 ### Home Screen
-![Home Screen](screenshots/home.jpg)
+<img src="screenshots/home.jpg" alt="Home Screen" style="height:700px;"/>
 
 ### Home Screen Filtered
 ![Home Screen Filtered](screenshots/homefiltered.jpg)
