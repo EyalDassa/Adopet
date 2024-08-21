@@ -1,6 +1,6 @@
 # Adopet
 
-![Logo](screenshots/logo.png)
+<img src="screenshots/logo.png" alt="Title" style="height:700px;"/>
 
 ## Overview
 
@@ -46,7 +46,6 @@ This project is part of an Android development course focused on building compre
 ## Screenshots
 
 ### Sign In
-![Sign In](screenshots/signin.jpg)
 <img src="screenshots/signin.jpg" alt="Sign In" style="height:700px;"/>
 
 ### Firebase AuthUI
